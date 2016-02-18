@@ -71,6 +71,8 @@ function onCellClick( event ){
     /// Check if diagonals must used during processing
     if ( document.getElementById( 'diagonalDirections' ).checked ){
         directions = directionsExtended;
+    }else{
+        directions = directionsDefault;
     }
     /// Get the cells 2D array
     var arr = getAs2DArray();
